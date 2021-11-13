@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">  
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/fontawesome.css">
+        <script type="text/javascript">
+            function suma() {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                document.calculadora.resultado.value = n1 + n2;
+            }
+            function resta() {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                document.calculadora.resultado.value = n1 - n2;
+            }
+            function multip() {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                document.calculadora.resultado.value = n1 * n2;
+            }
+            function divi() {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                document.calculadora.resultado.value = n1 / n2;
+            }
+        </script>   
+    </head>
+    <body>
+        <h3>CALCULADORA</h3>
+        <form name="calculadora">
+            <div class="mb-3">
+                <label for="n1" class="form-label">Número 1</label>
+                <input id="n1" class="form-control" type="number" name="n1" placeholder="Número 1">
+            </div>
+            <div class="mb-3">
+                <label for="n2" class="form-label">Número 2</label>
+                <input id="n2" class="form-control" type="number" name="n2" placeholder="Número 2">
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="suma()">+</button>
+            <button type="button" class="btn btn-primary" onclick="resta()">-</button>
+            <button type="button" class="btn btn-primary" onclick="multip()">*</button>
+            <button type="button" class="btn btn-primary" onclick="divi()">/</button>
+            <br>
+            <br>
+            <div class="form-group">
+                <fieldset disabled="">
+                    <label class="form-label" for="disabledInput">Resultado</label>
+                    <input class="form-control" id="resultado" name="resultado" type="text" placeholder="Resultado" disabled="">
+                </fieldset>
+            </div>
+        </form>
+    </body>
+</html>
