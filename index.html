@@ -37,34 +37,34 @@ and open the template in the editor.
     <body>
     <center>
         <h3>CALCULADORA</h3>
-        <form name="calculadora">
     </center>
-            <div class="mb-3">
-                <label for="n1" class="form-label">Número 1</label>
-                <input id="n1" class="form-control" type="number" name="n1" placeholder="Número 1">
-            </div>
-            <div class="mb-3">
-                <label for="n2" class="form-label">Número 2</label>
-                <input id="n2" class="form-control" type="number" name="n2" placeholder="Número 2">
-            </div>
-            <br>
+    <form name="calculadora">
+        <div class="mb-3">
+            <label for="n1" class="form-label">Número 1</label>
+            <input id="n1" class="form-control" type="number" name="n1" placeholder="Número 1">
+        </div>
+        <div class="mb-3">
+            <label for="n2" class="form-label">Número 2</label>
+            <input id="n2" class="form-control" type="number" name="n2" placeholder="Número 2">
+        </div>
+        <br>
         <center>
             <button type="button" class="btn btn-primary" onclick="suma()">+</button>
             <button type="button" class="btn btn-primary" onclick="resta()">-</button>
             <button type="button" class="btn btn-primary" onclick="multip()">*</button>
             <button type="button" class="btn btn-primary" onclick="divi()">/</button>
-            </center>
-            <br>
-            <br>
-            <div class="form-group">
-                <fieldset disabled="">
-                    <label class="form-label" for="disabledInput">Resultado</label>
-                    <input class="form-control" id="resultado" name="resultado" type="text" placeholder="Resultado" disabled="">
-                </fieldset>
-            </div>
-        </form>
+        </center>
         <br>
-        <p>Juan Pablo Velandia Castellanos.</p>
-        <p>506192039.</p>
-    </body>
+        <br>
+        <div class="form-group">
+            <fieldset disabled="">
+                <label class="form-label" for="disabledInput">Resultado</label>
+                <input class="form-control" id="resultado" name="resultado" type="text" placeholder="Resultado" disabled="">
+            </fieldset>
+        </div>
+    </form>
+    <br>
+    <p>Juan Pablo Velandia Castellanos.</p>
+    <p>506192039.</p>
+</body>
 </html>
